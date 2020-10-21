@@ -101,9 +101,52 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                 <!--LEFT COLUMN: COVID Statistics & facts-->
                 <div class="w3-col m3">
 
+                    <!--NEW COVID CASES: -->
+                    <div class="w3-container w3-card w3-white w3-round w3-margin">
+                        <img src="https://pournasengupta.github.io/testApp/images/newcases.png" style="width:100%" class="w3-margin-bottom">
+                        <p><a href="https://usafacts.org/covid-recovery-hub/#health-section" target="_blank"> usafacts.org</a></p>
+                    </div> 
+
                 </div>
                 <!--MIDDLE COLUMN: CU Boulder COVID Info-->
                 <div class="w3-col m5">
+
+                    <!-- Active COVID-19 Cases -->
+                    <div class="w3-card w3-round w3-white w3-border">
+                        <div class="w3-container">
+                        <p class="w3-center"></p>
+                        <h4 class="w3-center">Active COVID-19 Cases</h4>
+                        <p class="w3-center"></p>
+                        <hr>
+                            <!--DATE: /displays current date using js (LOAD AT END)-->
+                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Colorado: 86,857 </p> 
+                        <hr>    
+                            <p><i class="fa fa-flag-usa fa-fw w3-margin-right w3-text-theme"></i> U.S.A: 8.28 million </p>
+                        <hr>    
+                            <p><i class="fa fa-globe fa-fw w3-margin-right w3-text-theme"></i> World: 40.6 million </p>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <!-- Resource Links Accordian -->
+                    <div class="w3-card w3-round">
+                        <div class="w3-white">
+                            <button onclick="window.open('https://covid19.colorado.gov/', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-gavel fa-fw w3-margin-right"></i> CO Dept. of Public Health & Environment</button>
+                                <div id="Demo1" class="w3-hide w3-container">
+                                    <p>Some text..</p>
+                                </div>
+                            <button onclick="window.open('https://search.211colorado.org/search?terms=COVID-19%20Testing&page=1&location=Colorado&service_area=colorado', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-virus fa-fw w3-margin-right"></i> Community Testing Sites</button>
+                                <div id="Demo2" class="w3-hide w3-container">
+                                    <p>Some more text..</p>
+                                </div>
+                            <button onclick="window.open('https://covid19.colorado.gov/covid-19-and-wildfires', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-fire fa-fw w3-margin-right"></i> COVID-19 & Wildfires </button>
+                                <div id="Demo3" class="w3-hide w3-container"></div>
+                            <button onclick="window.open('https://www.acmt.net/covid19web.html', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-laptop fa-fw w3-margin-right"></i> COVID-19 Webinar Series</button>
+                                <div id="Demo4" class="w3-hide w3-container"></div>
+                        </div>      
+                    </div>
+                    <br>
 
                 </div>
                 <!--RIGHT COLUMN: COVID Safety Tips-->
