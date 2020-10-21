@@ -26,12 +26,18 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         
-        <!--CSS CDN BOOTSTRAP-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+        crossorigin="anonymous">
+
+        <!--MaxCDN from w3 schools-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
         <!--LOCAL STYLESHEET-->
         <link type="css" href="https://pournasengupta.github.io/testApp/home.css" rel="stylesheet" />
-
     </head>
     
     <body class="w3-theme-15">
@@ -47,7 +53,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                 <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="COVID-19 Info"><i class="fas fa-newspaper"></i></a>
                 <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Daily Health Questionnaire"><i class="fas fa-laptop-medical"></i></a>
                 <div class="w3-dropdown-hover w3-hide-small">
-                    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+                    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-light-blue">3</span></button>     
                     
                     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
                         <a href="#" class="w3-bar-item w3-button">COVID-19 Test Results (10/2/2020)</a>
@@ -58,12 +64,13 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                 <!--ADD SCHEDULE TAB-->
                 <!--ADD SEARCH TAB-->
                 <!--ADD SEARCH BAR TO LEFT OF PROFILE ICON-->
+
                 <div class="w3-dropdown-hover w3-hide-small">
-                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-topright w3-padding-large">
-                        <img src="https://pournasengupta.github.io/testApp/images/profile_icon.png" class="-w3-circle w3-topright icon" style="height:23px;width:23px">
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-display-topright w3-padding-large w3-hover-white" title="My Profile" >
+                        <img src="https://pournasengupta.github.io/testApp/images/profile_icon.png" class="w3-circle" style="height:23px; width:23px" alt="Avatar" >
                     </a>
 
-                    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-display-topright" style="width:300px">
                         <a href="#" class="w3-bar-item w3-button"> FirstName, LastName (username)</a>
                         <a href="#" class="w3-bar-item w3-button">My Profile</a>
                         <a href="#" class="w3-bar-item w3-button">My Account</a>
@@ -73,12 +80,18 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
             </div>
         </div>   
 
-        <!-- Navbar on small screens -->
+        <!-- Navbar on small screens, currently doesn't show all the pages listed below -->
         <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Map</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">COVID-19 Info</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Daily Health ?'s</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Notifications</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Search</a>
+            
+            <img src="https://pournasengupta.github.io/testApp/images/profile_icon.png" class="w3-circle" style="height:23px; width:23px" >
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fas fa-sign-out-alt"></i></a>
         </div>
 
         <!-- Page Container -->
@@ -87,87 +100,68 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
         <div class="w3-row">
             <!-- Left Column -->
             <div class="w3-col m3">
-            <!-- Profile -->
-            <div class="w3-card w3-round w3-white">
+            <!-- Active COVID-19 Cases -->
+            <div class="w3-card w3-round w3-white w3-border">
                 <div class="w3-container">
-                <h4 class="w3-center">About Today</h4>
-                <p class="w3-center"><img src="https://pournasengupta.github.io/testApp/images/engineering.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                <p class="w3-center"></p>
+                <h4 class="w3-center">Active COVID-19 Cases</h4>
+                <p class="w3-center"></p>
                 <hr>
                     <!--DATE: /displays current date using js (LOAD AT END)-->
-                    <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Date: <span id="datetime"></span></p> 
-                    <p><i class="fa fa- fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
-                    <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+                    <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Colorado: 86,857 </p> 
+                <hr>    
+                    <p><i class="fa fa-flag-usa fa-fw w3-margin-right w3-text-theme"></i> U.S.A: 8.28 million </p>
+                <hr>    
+                    <p><i class="fa fa-globe fa-fw w3-margin-right w3-text-theme"></i> World: 40.6 million </p>
                 </div>
             </div>
             <br>
             
-            <!-- Accordion -->
+            <!-- CU Links Accordian -->
             <div class="w3-card w3-round">
                 <div class="w3-white">
-                <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
-                <div id="Demo1" class="w3-hide w3-container">
-                    <p>Some text..</p>
-                </div>
-                <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
-                <div id="Demo2" class="w3-hide w3-container">
-                    <p>Some other text..</p>
-                </div>
-                <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
-                <div id="Demo3" class="w3-hide w3-container">
-                <div class="w3-row-padding">
-                <br>
-                <div class="w3-half">
-                    <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
-                </div>
-                <div class="w3-half">
-                    <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-                </div>
-                <div class="w3-half">
-                    <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
-                </div>
-                <div class="w3-half">
-                    <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
-                </div>
-                <div class="w3-half">
-                    <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-                </div>
-                <div class="w3-half">
-                    <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
-                </div>
-                </div>
-                </div>
+                    <button onclick="window.open('https://www.colorado.edu/covid-19-ready-dashboard', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-info-circle fa-fw w3-margin-right"></i> COVID-19 Dashboard</button>
+                        <div id="Demo1" class="w3-hide w3-container">
+                            <p>Some text..</p>
+                        </div>
+                    <button onclick="window.open('https://www.colorado.edu/today/', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-external-link-alt fa-fw w3-margin-right"></i> CU Boulder Today</button>
+                        <div id="Demo2" class="w3-hide w3-container">
+                            <p>Some more text..</p>
+                        </div>
+                    <button onclick="window.open('https://calendar.colorado.edu/virtual-events', 'popup', 'width=600, height=600'); return false;" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i> CU Virtual Events </button>
+                        <div id="Demo3" class="w3-hide w3-container"></div>
                 </div>      
             </div>
             <br>
             
-            <!-- Interests --> 
+            <!-- Quick Search --> 
             <div class="w3-card w3-round w3-white w3-hide-small">
                 <div class="w3-container">
                 <p>Interests</p>
                 <p>
-                    <span class="w3-tag w3-small w3-theme-d5">News</span>
-                    <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
-                    <span class="w3-tag w3-small w3-theme-d3">Labels</span>
-                    <span class="w3-tag w3-small w3-theme-d2">Games</span>
-                    <span class="w3-tag w3-small w3-theme-d1">Friends</span>
-                    <span class="w3-tag w3-small w3-theme">Games</span>
-                    <span class="w3-tag w3-small w3-theme-l1">Friends</span>
-                    <span class="w3-tag w3-small w3-theme-l2">Food</span>
-                    <span class="w3-tag w3-small w3-theme-l3">Design</span>
-                    <span class="w3-tag w3-small w3-theme-l4">Art</span>
-                    <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+                    <span class="w3-tag w3-small w3-theme-d5">C4C</span>
+                    <span class="w3-tag w3-small w3-theme-d4">UMC</span>
+                    <span class="w3-tag w3-small w3-theme-d3">C.A.S.E</span>
+                    <span class="w3-tag w3-small w3-theme-d2">Porter</span>
+                    <span class="w3-tag w3-small w3-theme-d1">Norlin </span>
+                    <span class="w3-tag w3-small w3-theme">Starbucks</span>
+                    <span class="w3-tag w3-small w3-theme-l1">Engineering</span>
+                    <span class="w3-tag w3-small w3-theme-l2">Bruce Willis</span>
+                    <span class="w3-tag w3-small w3-theme-l3">Eaton HUMN</span>
+                    <span class="w3-tag w3-small w3-theme-l4">ECON</span>
+                    <span class="w3-tag w3-small w3-theme-l5">Farrand Field</span>
                 </p>
                 </div>
             </div>
             <br>
             
-            <!-- Alert Box -->
-            <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+            <!-- Daily Health Q Box -->
+            <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small w3-hover-theme">
                 <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
                 <i class="fa fa-remove"></i>
                 </span>
-                <p><strong>Hey!</strong></p>
-                <p>People are looking at your profile. Find out who.</p>
+                <p><strong>Have you filled out your Daily Health Questionnaire today?</strong></p>
+                <p><a href="https://pournasengupta.github.io/testApp/healthq.html">Click here to fill it out!</a></p>
             </div>
             
             <!-- End Left Column -->
@@ -286,12 +280,20 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
         </footer>
 
         <footer class="w3-container w3-theme-d5">
-        <p>Created By Name Pending <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <p>Created By Name Pending <a href="https://github.com/CSCI-3308-CU-Boulder/Name-Pending" target="_blank">Github</a></p>
         </footer>
         
-        <script src="httpsL//pournasengupta.github.io/testapp/home.js" >
-        <!--JS CDN BOOTSTRAP-->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- JS CDN BOOTSTRAP-->    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
+        <!--Local JS-->
+        <script src="httpsL//pournasengupta.github.io/testapp/home.js" > </script>
+
     </body>
 </html> 

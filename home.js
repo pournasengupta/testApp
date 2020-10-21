@@ -22,6 +22,3 @@ function openNav() {
     }
 }
 
-//To get current date 
-var d = new Date(); 
-document.getElementById("datetime").innerHTML = d.toLocaleDateString(); 
