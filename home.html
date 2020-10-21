@@ -5,6 +5,8 @@ to fit the needs for the COVID-19 Safety Application Home Page
 https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&stacked=h
 -->
 
+<!--To-Do List structure built off of 
+https://codepen.io/franklynroth/pen/ZYeaBd?editors=1000-->
 
 <html>
     <head>
@@ -38,6 +40,8 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
 
         <!--LOCAL STYLESHEET-->
         <link type="css" href="https://pournasengupta.github.io/testApp/home.css" rel="stylesheet" />
+        <link type="css" href="https://pournasengupta.github.io/testApp/todo.css" rel="stylesheet" />
+
     </head>
     
     <body class="w3-theme-15">
@@ -98,8 +102,10 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
         <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
         <!-- The Grid -->
         <div class="w3-row">
+
+
             <!-- Left Column -->
-            <div class="w3-col m3">
+            <div class="w3-col m5">
             <!-- Active COVID-19 Cases -->
             <div class="w3-card w3-round w3-white w3-border">
                 <div class="w3-container">
@@ -137,7 +143,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
             <!-- Quick Search --> 
             <div class="w3-card w3-round w3-white w3-hide-small">
                 <div class="w3-container">
-                <p>Interests</p>
+                <h4>Interests</h4>
                 <p>
                     <span class="w3-tag w3-small w3-theme-d5">C4C</span>
                     <span class="w3-tag w3-small w3-theme-d4">UMC</span>
@@ -163,12 +169,64 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                 <p><strong>Have you filled out your Daily Health Questionnaire today?</strong></p>
                 <p><a href="https://pournasengupta.github.io/testApp/healthq.html">Click here to fill it out!</a></p>
             </div>
-            
-            <!-- End Left Column -->
+
+             <!-- TO-DO LIST --> 
+             <div class="w3-card w3-round w3-white w3-hide-small">
+                <div class="w3-container">
+                <p>
+                    <label for="new-task">
+                        <h4>New Task</h4>
+                    </label>
+                    <input class="ipt" id="new-task" type="text">
+                    <button class="toDo"> + </button>
+                </p>
+                <h4>To-Do</h4>
+                <ul id="incomplete">
+                    <li>
+                        <input class="ipt" type="checkbox">
+                        <label>Complete Daily Health Form</label>
+                        <input class="ipt" type="text">
+                        <button class="edit toDo">Edit Task</button>
+                        <button class="delete toDo">Delete Task</button>
+                    </li>
+
+                    <li class="editMode">
+                        <input class="ipt" type="checkbox">
+                        <label>Pick Up Groceries</label>
+                        <input class="ipt" type="text" value="Pick Up Groceries">
+                        <button class="edit toDo">Edit</button>
+                        <button class="delete toDo">Delete</button>
+                    </li>
+                </ul>
+
+                <h4>Completed Tasks</h4>
+                <ul id="completed">
+                    <li>
+                        <input class="ipt" type="checkbox" checked> 
+                        <label>Take COVID-19 Spit Test</label>
+                        <input class="ipt" type="text">
+                        <button class="edit toDo">Edit</button>
+                        <button class="delete toDo">Delete</button>
+                    </li>
+
+                    <li class="editMode">
+                        <input class="ipt" type="checkbox" checked> 
+                        <label>Order Textbooks</label>
+                        <input class="ipt" type="text">
+                        <button class="edit toDo">Edit</button>
+                        <button class="delete toDo">Delete</button>
+                    </li>
+                </ul>
+                
+                </div>
             </div>
+            <br>
             
-            <!-- Middle Column -->
-            <div class="w3-col m7">
+        <!-- End Left Column -->
+        </div>
+            
+        <!-- Right Column -->
+        <div class="w3-col m7">
             
                 <!--WEEKLY SCHEDULE-->
                 <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
@@ -189,50 +247,9 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
                 </div> 
             
             
-            <!-- End Middle Column -->
-            </div>
+        <!-- End Right Column -->
+        </div>
             
-            <!-- Right Column -->
-            <div class="w3-col m2">
-            <div class="w3-card w3-round w3-white w3-center">
-                <div class="w3-container">
-                <p>Upcoming Events:</p>
-                <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
-                <p><strong>Holiday</strong></p>
-                <p>Friday 15:00</p>
-                <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
-                </div>
-            </div>
-            <br>
-            
-            <div class="w3-card w3-round w3-white w3-center">
-                <div class="w3-container">
-                <p>Friend Request</p>
-                <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
-                <span>Jane Doe</span>
-                <div class="w3-row w3-opacity">
-                    <div class="w3-half">
-                    <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-                    </div>
-                    <div class="w3-half">
-                    <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <br>
-            
-            <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
-                <p>ADS</p>
-            </div>
-            <br>
-            
-            <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-                <p><i class="fa fa-bug w3-xxlarge"></i></p>
-            </div>
-            
-            <!-- End Right Column -->
-            </div>
             
         <!-- End Grid -->
         </div>
@@ -261,6 +278,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
         <!--Local JS-->
         <script src="httpsL//pournasengupta.github.io/testapp/home.js" > </script>
+        <script src="httpsL//pournasengupta.github.io/testapp/todo.js" > </script>
 
     </body>
 </html> 
