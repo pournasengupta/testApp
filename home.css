@@ -13,10 +13,6 @@ h3 {
     text-align: center; 
 }
 
-.img-container {
-    object-fit: contain; 
-    display: block;
-}
 
 
 .w3-theme-l5 {color:#000 !important; background-color:#f5f7f8 !important}
