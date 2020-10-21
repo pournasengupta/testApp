@@ -1,104 +1,318 @@
-<table>
-    <body>
-        <tr>
-            <th>08:00</th>
-            <td colspan="4" rowspan="2" class="stage-saturn">Welcome</td>
-        </tr>
-        <tr>
-            <th>08:30</th>
-        </tr>
-        <tr>
-            <th>09:00</th>
-            <td colspan="4" class="stage-earth">Speaker One <span>Earth Stage</span></td>
-        </tr>
-        <tr>
-            <th>09:30</th>
-            <td colspan="4" class="stage-earth">Speaker Two <span>Earth Stage</span></td>
-        </tr>
-        <tr>
-            <th>10:00</th>
-            <td colspan="4" class="stage-earth">Speaker Three <span>Earth Stage</span></td>
-        </tr>
-        <tr>
-            <th>10:30</th>
-            <td colspan="4" class="stage-earth">Speaker Four <span>Earth Stage</span></td>
-        </tr>
-        <tr>
-            <th>11:00</th>
-            <td rowspan="5" class="stage-mercury">Speaker Five <span>Mercury Stage</span></td>
-            <td rowspan="5" class="stage-venus">Speaker Six <span>Venus Stage</span></td>
-            <td rowspan="5" class="stage-mars">Speaker Seven <span>Mars Stage</span></td>
-            <td rowspan="2" class="stage-saturn">Lunch</td>
-        </tr>
-        <tr>
-            <th>11:30</th>
-        </tr>
-        <tr>
-            <th>12:00</th>
-            <td rowspan="3" class="stage-saturn">Break</td>
-        </tr>
-        <tr>
-            <th>12:30</th>
-        </tr>
-        <tr>
-            <th>13:00</th>
-        </tr>
-        <tr>
-            <th>13:30</th>
-            <td colspan="4" rowspan="2" class="stage-earth">Speaker Eight <span>Earth Stage</span></td>
-        </tr>
-        <tr>
-            <th>14:00</th>
-        </tr>
-        <tr>
-            <th>14:30</th>
-            <td colspan="4" rowspan="8" class="stage-saturn">Break</td>
-        </tr>
-        <tr>
-            <th>15:00</th>
-        </tr>
-        <tr>
-            <th>15:30</th>
-        </tr>
-        <tr>
-            <th>16:00</th>
-        </tr>
-        <tr>
-            <th>16:30</th>
-        </tr>
-        <tr>
-            <th>17:00</th>
-        </tr>
-        <tr>
-            <th>17:30</th>
-        </tr>
-        <tr>
-            <th>18:00</th>
-        </tr>
-        <tr>
-            <th>18:30</th>
-            <td colspan="4" class="stage-earth">Speaker Nine <span>Earth Stage</span></td>
-        </tr>
-        <tr>
-            <th>19:00</th>
-            <td colspan="2" rowspan="2" class="stage-earth">Speaker Ten <span>Earth Stage</span></td>
-            <td colspan="2" rowspan="2" class="stage-jupiter">Speaker Eleven <span>Jupiter Stage</span></td>
-        </tr>
-        <tr>
-            <th>19:30</th>
-        </tr>
-        <tr>
-            <th>20:00</th>
-            <td colspan="2" class="stage-mars">Speaker Twelve <span>Mars Stage</span></td>
-            <td class="stage-jupiter">Speaker Thirteen <span>Jupiter Stage</span></td>
-            <td class="stage-jupiter">Speaker Fourteen <span>Jupiter Stage</span></td>
-        </tr>
-        <tr>
-            <th>20:30</th>
-            <td colspan="4" rowspan="2" class="stage-saturn">Drinks</td>
-        </tr>
-        <tr>
-            <th>21:00</th>
-        </tr>
-    </body>
-</table>
+<p>
+    <label for="new-task">
+        <h4>New Task</h4>
+    </label>
+    <input class="ipt" id="new-task" type="text">
+    <button class="toDo"> + </button>
+</p>
+<h4>To-Do</h4>
+<ul id="incomplete">
+    <li>
+        <input class="ipt" type="checkbox">
+        <label>Complete Daily Health Form</label>
+        <input class="ipt" type="text">
+        <button class="edit toDo">Edit Task</button>
+        <button class="delete toDo">Delete Task</button>
+    </li>
+
+    <li class="editMode">
+        <input class="ipt" type="checkbox">
+        <label>Pick Up Groceries</label>
+        <input class="ipt" type="text" value="Pick Up Groceries">
+        <button class="edit toDo">Edit</button>
+        <button class="delete toDo">Delete</button>
+    </li>
+</ul>
+
+<h4>Completed Tasks</h4>
+<ul id="completed">
+    <li>
+        <input class="ipt" type="checkbox" checked> 
+        <label>Take COVID-19 Spit Test</label>
+        <input class="ipt" type="text">
+        <button class="edit toDo">Edit</button>
+        <button class="delete toDo">Delete</button>
+    </li>
+
+    <li class="editMode">
+        <input class="ipt" type="checkbox" checked> 
+        <label>Order Textbooks</label>
+        <input class="ipt" type="text">
+        <button class="edit toDo">Edit</button>
+        <button class="delete toDo">Delete</button>
+    </li>
+</ul>
+
+
+
+
+<!--CSS-->
+ul {margin: 0; padding: 0;}
+li *{float: left;}
+li,h4{clear: both; list-style:none;}
+
+.ipt, .toDo {outline: none; }
+
+.toDo{
+    background: none; 
+    border: 0px; 
+    color: #888; 
+    font-size: 15px; 
+    width: 60px; 
+    margin: 10px 0 0; 
+    cursor: pointer; 
+}
+
+.toDo:hover{color: #333;}
+
+h4, label[for='new-task']{
+    color: #333; 
+    font-weight:700; 
+    font-size: 15px; 
+    border-bottom: 2px solid #333; 
+    padding: 30px 0 10px; 
+    margin: 0; 
+    text-transform: lowercase; 
+}
+
+input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+
+input[type="text"]:focus {color: #333;}
+
+label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+  }
+  input#new-task {
+    float: left;
+    width: 318px;
+  }
+  p > button:hover {
+    color: #0FC57C;
+  }
+  
+  li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+  }
+  li > label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+  }
+  li >  input[type="text"] {
+    width: 226px;
+  }
+  li > .delete:hover {
+    color: #CF2323;
+  }
+  
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  ul li input[type="text"] {
+    display:none;
+  }
+  
+  ul li.editMode input[type="text"] {
+    display:block;
+  }
+  
+  ul li.editMode label {
+    display:none;
+  }
+
+  <!--JS-->
+  /*CODE IMPORTED FROM https://codepen.io/franklynroth/pen/ZYeaBd?editors=0010
+Slight changes in naming. */
+var taskInput=document.getElementById("new-task");//Add a new task.
+var addButton=document.getElementsByTagName("button")[0];//first button
+var incompleteTaskHolder=document.getElementById("incomplete");//ul of #incomplete-tasks
+var completedTasksHolder=document.getElementById("completed");//completed-tasks
+
+
+//New task list item
+var createNewTaskElement=function(taskString){
+
+	var listItem=document.createElement("li");
+
+	//input (checkbox)
+	var checkBox=document.createElement("input");//checkbx
+	//label
+	var label=document.createElement("label");//label
+	//input (text)
+	var editInput=document.createElement("input");//text
+	//button.edit
+	var editButton=document.createElement("button");//edit button
+
+	//button.delete
+	var deleteButton=document.createElement("button");//delete button
+
+	label.innerText=taskString;
+
+	//Each elements, needs appending
+	checkBox.type="checkbox";
+	editInput.type="text";
+
+	editButton.innerText="Edit";//innerText encodes special characters, HTML does not.
+	editButton.className="edit";
+	deleteButton.innerText="Delete";
+	deleteButton.className="delete";
+
+
+
+	//and appending.
+	listItem.appendChild(checkBox);
+	listItem.appendChild(label);
+	listItem.appendChild(editInput);
+	listItem.appendChild(editButton);
+	listItem.appendChild(deleteButton);
+	return listItem;
+}
+
+
+
+var addTask=function(){
+	console.log("Add Task...");
+	//Create a new list item with the text from the #new-task:
+	var listItem=createNewTaskElement(taskInput.value);
+
+	//Append listItem to incompleteTaskHolder
+	incompleteTaskHolder.appendChild(listItem);
+	bindTaskEvents(listItem, taskCompleted);
+
+	taskInput.value="";
+
+}
+
+//Edit an existing task.
+
+var editTask=function(){
+console.log("Edit Task...");
+console.log("Change 'edit' to 'save'");
+
+
+var listItem=this.parentNode;
+
+var editInput=listItem.querySelector('input[type=text]');
+var label=listItem.querySelector("label");
+var containsClass=listItem.classList.contains("editMode");
+		//If class of the parent is .editmode
+		if(containsClass){
+
+		//switch to .editmode
+		//label becomes the inputs value.
+			label.innerText=editInput.value;
+		}else{
+			editInput.value=label.innerText;
+		}
+
+		//toggle .editmode on the parent.
+		listItem.classList.toggle("editMode");
+}
+
+
+
+
+//Delete task.
+var deleteTask=function(){
+		console.log("Delete Task...");
+
+		var listItem=this.parentNode;
+		var ul=listItem.parentNode;
+		//Remove the parent list item from the ul.
+		ul.removeChild(listItem);
+
+}
+
+
+//Mark task completed
+var taskCompleted=function(){
+		console.log("Complete Task...");
+	
+	//Append the task list item to the #completed-tasks
+	var listItem=this.parentNode;
+	completedTasksHolder.appendChild(listItem);
+				bindTaskEvents(listItem, taskIncomplete);
+
+}
+
+
+var taskIncomplete=function(){
+		console.log("Incomplete Task...");
+//Mark task as incomplete.
+	//When the checkbox is unchecked
+		//Append the task list item to the #incomplete-tasks.
+		var listItem=this.parentNode;
+	incompleteTaskHolder.appendChild(listItem);
+			bindTaskEvents(listItem,taskCompleted);
+}
+
+
+
+var ajaxRequest=function(){
+	console.log("AJAX Request");
+}
+
+//The glue to hold it all together.
+
+
+//Set the click handler to the addTask function.
+addButton.onclick=addTask;
+addButton.addEventListener("click",addTask);
+addButton.addEventListener("click",ajaxRequest);
+
+
+var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
+	console.log("bind list item events");
+//select ListItems children
+	var checkBox=taskListItem.querySelector("input[type=checkbox]");
+	var editButton=taskListItem.querySelector("button.edit");
+	var deleteButton=taskListItem.querySelector("button.delete");
+
+
+			//Bind editTask to edit button.
+			editButton.onclick=editTask;
+			//Bind deleteTask to delete button.
+			deleteButton.onclick=deleteTask;
+			//Bind taskCompleted to checkBoxEventHandler.
+			checkBox.onchange=checkBoxEventHandler;
+}
+
+//cycle over incompleteTaskHolder ul list items
+	//for each list item
+	for (var i=0; i<incompleteTaskHolder.children.length;i++){
+
+		//bind events to list items chldren(tasksCompleted)
+		bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
+	}
+
+
+
+
+//cycle over completedTasksHolder ul list items
+	for (var i=0; i<completedTasksHolder.children.length;i++){
+	//bind events to list items chldren(tasksIncompleted)
+		bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
+	}
+
