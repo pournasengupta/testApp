@@ -6,12 +6,17 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_social&sta
 
 
 html, body, h1, h2, h3, h4, h5 {
-    font-family: "Open Sans", sans-serif
+    font-family: "Open Sans", sans-serif; 
+    overflow: scroll;
 }
 
 h3 {text-align: center;}
 
-.w3-theme-l5 {color:#000 !important; background-color:#f5f7f8 !important}
+/* ICONS */
+
+
+
+.w3-theme-l5 {color:#000 !important; background-color:#b9b0b0 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#dfe5e8 !important}
 .w3-theme-l3 {color:#000 !important; background-color:#becbd2 !important}
 .w3-theme-l2 {color:#000 !important; background-color:#9eb1bb !important}
@@ -22,7 +27,7 @@ h3 {text-align: center;}
 .w3-theme-d4 {color:#fff !important; background-color:#3a4b53 !important}
 .w3-theme-d5 {color:#fff !important; background-color:#303e45 !important}
 
-.w3-theme-light {color:#000 !important; background-color:#f5f7f8 !important}
+.w3-theme-light {color:#000 !important; background-color:#b9b0b0 !important}
 .w3-theme-dark {color:#fff !important; background-color:#303e45 !important}
 .w3-theme-action {color:#fff !important; background-color:#303e45 !important}
 
